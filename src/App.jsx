@@ -66,7 +66,7 @@ const App = () => {
     setUserChoice("");
     setCompChoice("");
     setUserScore(0);
-    setCompChoice(0);
+    setCompScore(0);
     setDisplayMsg("Game has started!");
     setBgColor("black");
   };
