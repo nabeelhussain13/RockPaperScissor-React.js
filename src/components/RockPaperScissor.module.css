@@ -1,0 +1,108 @@
+.appContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.appName {
+  font-weight: 500;
+}
+
+.imgContainer {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.scoreContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.score {
+  font-size: xxx-large;
+}
+
+.player {
+  font-size: larger;
+}
+
+.winMsg {
+  font-size: larger;
+  margin-top: 15px;
+  display: inline-block;
+  background-color: green;
+  width: 16%;
+  border-radius: 25px;
+  color: white;
+}
+
+.msg {
+  font-size: larger;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .winMsg {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .winMsg {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .appContainer {
+    width: 340px;
+  }
+
+  .appName {
+    margin-top: 20px;
+  }
+
+  .imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .winMsg {
+    width: 60%;
+  }
+
+  .msg {
+    font-size: 16px;
+  }
+}
