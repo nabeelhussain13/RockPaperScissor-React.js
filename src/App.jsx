@@ -9,7 +9,7 @@ const App = () => {
   const [compScore, setCompScore] = useState(0);
   const [winner, setWinner] = useState("");
   const [displayMsg, setDisplayMsg] = useState("The game has started!");
-  const [bgColor, setBgColor] = useState("#01161e");
+  const [bgColor, setBgColor] = useState("black");
   const [message, setMessage] = useState(false);
 
   const onClickHandler = (event) => {
@@ -69,7 +69,7 @@ const App = () => {
     setUserScore(0);
     setCompScore(0);
     setDisplayMsg("Game has started!");
-    setBgColor("#01161e");
+    setBgColor("black");
     setMessage(true);
   };
 
