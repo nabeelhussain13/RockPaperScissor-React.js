@@ -8,13 +8,14 @@ const App = () => {
   const [userScore, setUserScore] = useState(0);
   const [compScore, setCompScore] = useState(0);
   const [winner, setWinner] = useState("");
-  const [displayMsg, setDisplayMsg] = useState("Game has started!");
-  const [bgColor, setBgColor] = useState("black");
-  const [visibility, setVisibility] = useState("hidden");
+  const [displayMsg, setDisplayMsg] = useState("The game has started!");
+  const [bgColor, setBgColor] = useState("#01161e");
+  const [message, setMessage] = useState(false);
 
   const onClickHandler = (event) => {
     const userSelection = event.target.name;
     const compSelection = genCompChoice();
+    setMessage(false);
 
     setUserChoice(userSelection);
     setCompChoice(compSelection);
@@ -44,8 +45,8 @@ const App = () => {
 
   const gameDraw = () => {
     setWinner("Draw");
-    setDisplayMsg("Game has drawn!");
-    setBgColor("gray");
+    setDisplayMsg("The game was drawn!");
+    setBgColor("#5e5b52");
   };
 
   const playGame = (user, comp) => {
@@ -68,7 +69,8 @@ const App = () => {
     setUserScore(0);
     setCompScore(0);
     setDisplayMsg("Game has started!");
-    setBgColor("black");
+    setBgColor("#01161e");
+    setMessage(true);
   };
 
   return (
@@ -83,7 +85,7 @@ const App = () => {
         bgColor={bgColor}
         onClickHandler={onClickHandler}
         resetBtnHandler={resetBtnHandler}
-        visibility={visibility}
+        message={message}
       ></RockPaperScissor>
     </>
   );

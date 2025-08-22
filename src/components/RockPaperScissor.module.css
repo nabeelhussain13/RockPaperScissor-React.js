@@ -4,7 +4,8 @@
 }
 
 .appName {
-  font-weight: 500;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .imgContainer {
@@ -40,11 +41,11 @@ img:hover {
 }
 
 .winMsg {
-  font-size: larger;
+  font-size: x-large;
   margin-top: 15px;
   display: inline-block;
   background-color: green;
-  width: 16%;
+  width: 20rem;
   border-radius: 25px;
   color: white;
 }
@@ -61,7 +62,7 @@ img:hover {
   }
 
   .winMsg {
-    width: 30%;
+    width: 50%;
   }
 }
 
@@ -72,7 +73,7 @@ img:hover {
   }
 
   .winMsg {
-    width: 35%;
+    width: 60%;
   }
 }
 
@@ -98,10 +99,10 @@ img:hover {
   }
 
   .winMsg {
-    width: 60%;
+    width: 100%;
   }
 
   .msg {
-    font-size: 16px;
+    font-size: 20px;
   }
 }

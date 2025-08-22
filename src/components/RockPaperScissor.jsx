@@ -13,7 +13,7 @@ const RockPaperScissor = ({
   bgColor,
   onClickHandler,
   resetBtnHandler,
-  visibility,
+  message,
 }) => {
   return (
     <div className={`${styles.appContainer} container`}>
@@ -56,10 +56,11 @@ const RockPaperScissor = ({
       <span className={styles.winMsg} style={{ backgroundColor: bgColor }}>
         {displayMsg}
       </span>
+
       <p
         className={styles.msg}
         style={{
-          visibility: winner === "" ? "hidden" : "visible",
+          visibility: winner === "" || message ? "hidden" : "visible",
         }}
       >
         You chose <strong>{userChoice}</strong>. Computer chose{" "}
